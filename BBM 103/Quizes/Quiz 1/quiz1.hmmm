@@ -1,0 +1,14 @@
+0 read r1 #falling time
+1 read r2 #initial velocity
+2 read r3 #initial position
+3 setn r4 2
+4 setn r5 10
+5 neg r6 r5
+6 mul r7 r1 r1
+7 mul r7 r7 r6
+8 div r7 r7 r4
+9 mul r8 r1 r2
+10 add r9 r7 r8
+11 add r10 r9 r3
+12 write r10
+13 halt
